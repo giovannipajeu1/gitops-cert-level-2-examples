@@ -15,10 +15,8 @@ spec:
               directories:
                 - path: applicationset/examples/matrix/cluster-addons/*
           # cluster generator, 'child' #2
-          - clusters:
-              selector:
-                matchLabels:
-                  argocd.argoproj.io/secret-type: cluster
+          - clusters: {}
+              
   template:
     metadata:
       name: '{{path.basename}}-{{name}}'
