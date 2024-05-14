@@ -27,7 +27,7 @@ spec:
         targetRevision: HEAD
         path: '{{path}}'
       destination:
-        server: '{{server}}'
+        server: application-sets/example-apps/*
         namespace: '{{path.basename}}'
       syncPolicy:
         automated:
